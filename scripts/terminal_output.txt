@@ -1,0 +1,19 @@
+postgresql+psycopg2://user1:***@localhost:5432/postgres
+postgresql+psycopg2://user1:***@localhost:5432/postgres
+[Extract] Start
+[Extract] Downloading snapshot
+[Extract] Saving data from '/home/jerrold/folder/Reporting-etl/data/source/downloaded_at=2021-02-01/PPR-ALL.zip' to '/home/jerrold/folder/Reporting-etl/data/raw/downloaded_at=2021-02-01/ppr-all.csv'
+[Extract] First row example: {'Date of Sale (dd/mm/yyyy)': '01/12/2020', 'Address': '10 The Way, Ledwill Park, Kilcock', 'Postal Code': '', 'County': 'Kildare', 'Price (€)': '€299,559.00', 'Description of Property': 'New Dwelling house /Apartment'}
+[Extract] End
+
+[Transform] Start
+[Transform] Remove any old data from ppr_raw_all table
+[Transform] Transform new data available in ppr_raw_all table
+[Transform] End
+
+[Load] Start
+[Load] Inserting new rows
+Transactions to insert: 0
+[Load] Deleting rows not available in the new transformed data
+Transactions to delete: 0
+[Load] End
